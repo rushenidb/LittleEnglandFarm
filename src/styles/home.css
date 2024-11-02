@@ -1,0 +1,1017 @@
+@import url('https://fonts.googleapis.com/css2?family=Digdope&display=swap');
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Start a little below */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
+.slide {
+  
+  position: relative;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+
+}
+
+/* .slide1{
+  opacity: 0.6;
+
+} */
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #ffffff;
+  padding-left: 20px;
+  border-radius: 8px;
+
+}
+
+.slide-text.painted-paradise p.paradise-p {
+  font-family: 'Painted Paradise';
+  font-size: 50px;
+  margin: 0; 
+  padding-bottom: 5px;
+  color: #ffffff;
+}
+
+.slide-text.painted-paradise h1.paradise-h1,
+.slide-text.painted-paradise h6.paradise-h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slide-text.painted-paradise h1.paradise-h1 {
+  font-family: 'Digdope-Regular';
+  font-size: 100px;
+}
+
+.slide-text.painted-paradise h6.paradise-h6 {
+  font-family: 'Digdope-Regular';
+  font-size: 24px;
+}
+
+.slide-text.digdope-regular h5.digdope-h5 {
+  font-family: 'Digdope-Regular';
+  font-size: 34px;
+  text-align: center;
+}
+
+
+.diamond-icon {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 1px solid none;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: inline-block;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li.slick-active .diamond-icon {
+  background-color: #0a302d; 
+}
+
+.bestsellers {
+  position: relative;
+  background-color: #F4F1E7;
+  text-align: left;
+  padding: 40px 20px 20px 100px;
+}
+
+.bestsellers::before {
+  content: '';
+  position: absolute;
+  top: -20px; 
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 100 20" transform="rotate(0)"><path fill="%23F4F1E7" d="M0 20 L7 8 L14 20 L21 8 L28 20 L35 8 L42 20 L49 8 L56 20 L63 8 L70 20 L77 8 L84 20 L91 8 L98 20 V20 H0 Z"/></svg>');
+  z-index: 1;
+}
+
+.tree-behind-text {
+  position: absolute;
+  top: 52px; /* Adjust positioning as needed */
+  left: 20px;
+  z-index: 1; /* Position behind the overlay */
+}
+
+.tree {
+  width: 180px;
+  opacity: 0.2; /* Adjust opacity for better readability of text */
+}
+
+.chicken {
+  position: absolute;
+  top: 30px; /* Adjust to control distance from the top */
+  right: 100px; /* Adjust to control distance from the right */
+  width: 200px;
+  z-index: 2; /* Above the background elements */
+}
+
+.bestsellers-overlay {
+  position: relative;
+  z-index: 2; /* Position on top of the tree */
+}
+
+.bestsellers p {
+  font-family: 'Painted Paradise';
+  font-size: 40px;
+  margin: 0;
+  color: #08645e;
+  padding-top:20px;
+}
+
+.bestsellers h2.section-title {
+  font-family: 'Digdope-Regular';
+  font-size: 80px;
+  color: #5e5a60;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bestsellers p.section-subtitle {
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-size: 18px;
+  padding-top:20px;
+  margin-bottom: 20px;
+  color: #aaaaaa;
+  font-weight: lighter;
+  max-width: 1100px;
+}
+
+.bestsellers-link {
+  color: #5e5a60;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 50px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Digdope-Regular;
+  font-size: 30px;
+}
+
+.bestsellers .bestsellers-link {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  text-decoration: underline dashed #f76800;
+  text-underline-offset: 5px;
+}
+
+
+/* Keyframes for wiggle animation on hover */
+@keyframes wiggle-tilt {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+}
+
+/* Our Range Section */
+.our-range {
+  background-color: #08645e;
+  color: #ffffff;
+  margin-top: -35px;
+  text-align: center;
+  position: relative;
+}
+
+.our-range::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 100 20" transform="rotate(0)"><path fill="%2308645e" d="M0 20 L7 8 L14 20 L21 8 L28 20 L35 8 L42 20 L49 8 L56 20 L63 8 L70 20 L77 8 L84 20 L91 8 L98 20 V20 H0 Z"/></svg>');
+  z-index: 0;
+}
+
+
+
+.our-range p {
+  font-family: 'Painted Paradise';
+  font-size: 35px;
+  padding-top: 80px;
+  color: #f1dd6c;
+}
+
+.our-range h2.section-title {
+  font-family: 'Digdope-Regular'; 
+  font-size: 70px;
+  margin-top: -40px;
+}
+
+.range-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.range-item {
+  position: relative;
+  flex: 1;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.range-item:hover {
+  animation: wiggle-tilt 0.5s ease-in-out 1.5; /* Limit wiggle to 4 cycles on hover */
+}
+
+.range-item:hover img {
+  transform: scale(1.1); /* Zoom in the image */
+  opacity: 0.7; /* Darker opacity on hover */
+}
+
+.range-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for zoom and opacity */
+}
+
+.range-item p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: 'Digdope-Regular';
+  pointer-events: none;
+}
+
+.owl-in-right {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  z-index: 1;
+}
+
+.owl {
+  width: 100px;
+}
+
+.owl-after-shop {
+  margin-top: 20px;
+  text-align: left;
+  z-index: 1;
+  padding-left: 250px;
+  padding-bottom: 50px;
+}
+
+.owl-after-shop .owl {
+  width: 100px;
+  padding-right: 150px;
+}
+
+.shop-and-owl {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 180px;
+}
+
+
+.shop-all {
+  display: inline-block;
+  padding: 10px 30px 10px 20px;
+  background-color: #f1dd6c;
+  color: #08645e;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Digdope-Regular';
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.shop-all:hover {
+  animation: wiggle-tilt 0.5s ease-in-out 1.5; /* Limit wiggle to 4 cycles on hover */
+}
+
+.shop-all::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 20px;
+  height: 100%;
+  background-color: #f1dd6c;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+
+
+/* Styles for the More Than Just a Farm Shop section */
+.more-than-section {
+  position: relative; /* Ensures positioning relative to this container */
+  background-color: #F4F1E7;
+  padding: 40px 20px 20px 100px;
+  overflow: hidden; /* Ensures elements do not overflow the section */
+  height:700px;
+}
+
+.more-than-section::before { /* New rule for the rotated element */
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 100 20" transform="rotate(180)"><path fill="%2308645e" d="M0 20 L7 8 L14 20 L21 8 L28 20 L35 8 L42 20 L49 8 L56 20 L63 8 L70 20 L77 8 L84 20 L91 8 L98 20 V20 H0 Z"/></svg>');
+  z-index: 0;
+}
+
+/* Position the title in front of the content */
+.more-than-title {
+  font-family: 'Digdope-Regular';
+  font-size: 150px;
+  color: #5e5a60;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute; /* Position the title absolutely within the section */
+  top: 50px; /* Adjust to set desired distance from the top */
+  left: 460px; /* Adjust for horizontal placement */
+  z-index: 2; /* Higher z-index to appear above .more-than-content */
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+  text-decoration-color: #f76800;
+}
+
+/* Styles for the content container */
+.more-than-content {
+  /* position:initial; */
+  z-index: 1; /* Lower z-index so it appears behind .more-than-title */
+  /* display: flex; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
+  margin-top: 100px; /* Adjust to create space below the title */
+}
+
+/* Styles for left and right heading text */
+.more-than-text-left {
+  color: #5e5a60;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+  font-family: 'Digdope-Regular';
+  font-size: 30px;
+  max-width: 380px;
+}
+
+.more-than-text-right {
+  color: #5e5a60;
+  margin-right: 382px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  /* display: inline-block; */
+  text-align: left;
+  font-family: 'Digdope-Regular';
+  font-size: 30px;
+  position:absolute; /* Position at the top right */
+  top: 0;
+  right: 10px; /* Adjust for horizontal alignment */
+}
+
+/* Styles for the descriptive text */
+.left-text {
+  margin-right: 180px;
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #9b9b9b;
+  max-width: 300px;
+  top: 60px;
+}
+
+/* Position right-text below the right heading */
+.right-text {
+  max-width: 420px;
+  color: #9b9b9b;
+  font-size: 18px;
+  font-family: 'GT Walsheim Pro', sans-serif;
+  margin-right: 80px;
+  text-align: left;
+  position: absolute;
+  top: 60px; /* Adjust to control vertical spacing from .more-than-text-right */
+  right: 10px;
+}
+
+.birds{
+  width:400px;
+  height:50px;
+  padding-left: 440px;
+  padding-top:100px;
+}
+
+
+/* Product of the month section */
+.fixed-image {
+  position: fixed; /* Fixes the position in the viewport */
+  top: 20px; /* Adjust this value to position it vertically */
+  right: 20px; /* Adjust this value to position it horizontally */
+  z-index: 100; /* Ensure it is above other content */
+}
+
+/* Product of the month section */
+.product-of-the-month {
+  position: relative; /* Ensures positioning relative to this container */
+  background-color: #F4F1E7;
+  padding: 40px 20px 20px 100px;
+  height: 1200px; /* Adjust based on your content */
+  overflow: hidden; /* Ensures elements do not overflow the section */
+}
+
+
+.product-of-the-month::before { /* New rule for the rotated element */
+  content: '';
+  position: absolute;
+  top: 1240px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 100 20" transform="rotate(0)"><path fill="%2308645e" d="M0 20 L7 8 L14 20 L21 8 L28 20 L35 8 L42 20 L49 8 L56 20 L63 8 L70 20 L77 8 L84 20 L91 8 L98 20 V20 H0 Z"/></svg>');
+  z-index: 0;
+}
+
+/* Flex container for text and image */
+.content-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+}
+
+/* Sticky image styling */
+.imageright {
+  flex-shrink: 0; /* Prevents image from shrinking */
+  position: sticky; /* Keeps the image in place as you scroll */
+  top: 20px; /* Distance from the top of the viewport */
+  z-index: 2;
+  margin-left: 2px; /* Adds space between text and image */
+  margin-top: 100px; /* Adjust based on design */
+}
+
+
+
+
+/* Image styling */
+.book {
+  max-width: 500px; /* Controls image size */
+  height: auto;
+  border-radius: 8px;
+}
+
+.product {
+  font-family: 'Painted Paradise';
+  font-size: 40px;
+  margin: 0;
+  text-align: left;
+  color: #a7170d;
+}
+
+.section-title2 {
+  font-family: 'Digdope-Regular';
+  font-size: 70px;
+  color: #5e5a60;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 50px; /* Adjust to set desired distance from the top */
+}
+
+.product-link {
+  color: #5e5a60;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Digdope-Regular';
+  font-size: 30px;
+}
+
+.section-subtitle {
+  margin-right: 180px;
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #525252;
+  max-width: 500px;
+  top: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle2 {
+  margin-right: 180px;
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #525252;
+  max-width: 500px;
+  top: 60px;
+}
+
+.section-subtitle4 {
+  margin-right: 180px;
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #525252;
+  max-width: 500px;
+  top: 60px;
+  font-weight: bold;
+}
+
+.qty {
+  display: inline-block;
+  padding: 10px 40px 10px 20px;
+  background-color: none;
+  color: #444444;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Digdope-Regular';
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  border-color: #444444;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-style: ridge;
+  border-width: 2px;
+}
+
+.shop-all {
+  display: inline-block;
+  padding: 10px 40px 10px 30px;
+  margin-left: 8px;
+  background-color: #f1dd6c;
+  color: #0a302d;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Digdope-Regular';
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-color: #444444;
+}
+
+
+/*faq section*/
+.faq{
+    position: relative; /* Ensures positioning relative to this container */
+    background-color: #08645e;
+    padding: 40px 20px 20px 0px;
+    overflow: hidden; /* Ensures elements do not overflow the section */
+    height:800px;
+    overflow: hidden;
+  }
+  
+
+  .frequently-asked{
+    font-family: 'Painted Paradise';
+  font-size: 40px;
+  margin: 0;
+  text-align: left;
+  color: #fcdf60;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 210px;
+  }
+
+  .section-title3{
+    font-family: 'Digdope-Regular';
+    padding-left: 210px;
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* position: absolute; Position the title absolutely within the section */
+    top: 10px; /* Adjust to set desired distance from the top */
+  }
+
+  .section-subtitle3{
+   
+    font-family: 'GT Walsheim Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #b9b9b9;
+   padding-left: 200px;
+    top: 10px;
+    font-weight: 100;
+  }
+
+.faq-item {
+  padding: 0px 0;
+  max-width: 800px;
+  padding-left: 220px;
+  padding-top: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    /* display: inline-block; */
+    text-align: center;
+    margin-top: 0;
+    font-family: Digdope-Regular;
+    font-size: 30px;
+
+}
+
+.faq-toggle {
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.faq-answer {
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-size: 18px;
+  color: #E2E2E2;
+  margin-top: 5px;
+  padding-left: 10px;
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+.faq-divider {
+  height: 3px;
+  background-image: linear-gradient(to right, #638582 40%, transparent 0%);
+  background-size: 20px 1px;
+  margin-top: 2px;
+}
+
+/* Image styling */
+.hay-image {
+  flex-shrink: 0; /* Prevents image from shrinking */
+  margin-left: 2px; /* Adds space between text and image */
+  margin-top: 500px;
+  padding-left: 150px;
+  z-index: 2;
+}
+
+.hay {
+  max-width: 140px; /* Controls image size */
+  height: auto;
+  border-radius: 8px;
+}
+
+.second-hay-image {
+  padding-top: 50px;
+  flex-shrink: 0; /* Prevents image from shrinking */
+  z-index: 5;
+  padding-left:15px;
+}
+
+.hay2 {
+  max-width: 140px; /* Controls image size */
+  height: auto;
+  border-radius: 8px;
+  padding-left: 15px;
+}
+
+/*image after faq*/
+.stockist-section {
+  position: relative;
+  text-align: center;
+  background-color: #F4F1E7;
+  height:1200px;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  opacity: 0; /* Start with opacity 0 for fade-in */
+  transform: scale(1); /* Initial scale for the zoom effect */
+  animation: fadeInZoom 8s ease-in-out forwards, slowZoom 30s linear infinite; /* Apply two animations */
+}
+
+/* Fade in and zoom animation */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.05); /* Slight zoom */
+  }
+}
+
+/* Slow continuous zoom (optional) */
+@keyframes slowZoom {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.08); /* Increase scale slightly */
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+
+.stockist-content {
+  position: absolute;
+  top: 55%; /* Starts from the middle of the background */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content horizontally */
+  background-color: #005f57; /* Match the background color */
+  color: #fff;
+  padding: 20px 100px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 660px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stockist-title {
+  margin-bottom: 10px;
+  font-family: 'Painted Paradise';
+  font-size: 30px;
+  margin: 0;
+  text-align: left;
+  color: #fae37a;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-weight: 100;
+}
+
+.stockist-title span {
+  font-family: Digdope-Regular; /* Replace with the actual font name if available */
+  /* font-size: 2em; */
+  color: #F4F1E7;
+  font-size: 80px;
+}
+
+.stockist-subtitle {
+  font-family: 'GT Walsheim Pro', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  color:#d6d6d6;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Adjust height of bounce */
+  }
+  60% {
+    transform: translateY(-5px); /* Adjust secondary bounce height */
+  }
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 30px 10px 22px;
+  background-color: #f1dd6c;
+  color: #08645e;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Digdope-Regular';
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-color: #f1dd6c;
+  animation: bounce 2s infinite; /* Apply bounce animation */
+}
+
+.contact-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -19px;
+  width: 20px;
+  height: 100%;
+  background-color: #f1dd6c;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+
+.goat-icon-left,
+.goat-icon-right {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+}
+
+.goat-icon-left {
+  left: 50px;
+  width:100px;
+}
+
+.goat-icon-right {
+  right: 50px;
+  width: 100px;
+  top:250px;
+}
+
+
+.follow-us{
+  padding-top:250px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.follow-text{
+  /* margin-bottom: 10px; */
+  font-family: 'Painted Paradise';
+  font-size: 30px;
+  margin: 0;
+  text-align: left;
+  color: #a7170d;
+  text-align: left;
+  /* padding-top: 20px; */
+  padding-left: 20px;
+  font-weight: 100;
+}
+
+.follow-text span{
+  font-family: 'Digdope-Regular';
+  color:#555454;
+  font-size: 38px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .bestsellers {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slide-text {
+    padding-left: 10px;
+  }
+  
+  .slide-text.painted-paradise p.paradise-p {
+    font-size: 35px;
+  }
+  
+  .slide-text.painted-paradise h1.paradise-h1 {
+    font-size: 60px;
+  }
+  
+  .bestsellers h2.section-title {
+    font-size: 60px;
+  }
+  
+  .bestsellers .bestsellers-link {
+    font-size: 24px;
+  }
+  
+  .more-than-title {
+    font-size: 100px;
+    left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bestsellers {
+    padding: 10px;
+  }
+
+  .slide-text.painted-paradise p.paradise-p {
+    font-size: 25px;
+  }
+  
+  .slide-text.painted-paradise h1.paradise-h1 {
+    font-size: 40px;
+  }
+  
+  .bestsellers p.section-subtitle {
+    font-size: 16px;
+  }
+
+  .bestsellers h2.section-title {
+    font-size: 50px;
+  }
+
+  .bestsellers .bestsellers-link {
+    font-size: 20px;
+  }
+  
+  .more-than-title {
+    font-size: 70px;
+    left: 50px;
+  }
+
+  .range-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-and-owl {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-text.painted-paradise p.paradise-p {
+    font-size: 20px;
+  }
+  
+  .slide-text.painted-paradise h1.paradise-h1 {
+    font-size: 30px;
+  }
+  
+  .bestsellers h2.section-title {
+    font-size: 40px;
+  }
+  
+  .bestsellers p.section-subtitle {
+    font-size: 14px;
+  }
+  
+  .bestsellers .bestsellers-link {
+    font-size: 18px;
+  }
+  
+  .more-than-title {
+    font-size: 50px;
+    left: 20px;
+  }
+}

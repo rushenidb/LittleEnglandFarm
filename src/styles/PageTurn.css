@@ -1,0 +1,101 @@
+/* PageTurn.css */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#all {
+    width: 680px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#page-flip {
+    position: relative;
+    width: 600px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+    perspective: 1500px; /* 3D perspective */
+}
+
+.page {
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side of the page */
+    transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+/* Current page styling */
+.active {
+    transform: rotateY(0deg); /* Flat view for current page */
+}
+
+/* Next page styling */
+.next {
+    transform: rotateY(-180deg) translateZ(-50px); /* Rotate and translate */
+    opacity: 0; /* Fade out */
+}
+
+.page-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+#page-flip:hover .next {
+    transform: rotateY(0deg) translateZ(0); /* Flip back to view */
+    opacity: 1; /* Fully visible */
+}
+
+/* Additional effects for turning pages */
+.page-image {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+.page {
+    transition: transform 1s ease-in-out; /* Smooth transition for flipping */
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #all {
+        width: 90%;
+    }
+
+    #page-flip {
+        width: 100%;
+        height: auto;
+    }
+
+    .page {
+        height: auto;
+    }
+
+    .next {
+        transform: rotateY(-180deg) translateZ(-20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #all {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #page-flip {
+        width: 100%;
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .next {
+        transform: rotateY(-180deg) translateZ(-10px);
+    }
+    
+    .page-image {
+        border-radius: 3px;
+    }
+}

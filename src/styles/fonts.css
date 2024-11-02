@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Digdope-Regular';
+    src: url('../fonts/digdope.woff2') format('woff2'),
+         url('../fonts/digdope.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+  }
+
+  @font-face {
+     font-family: 'Painted Paradise';
+     src: url('../fonts/Painted\ Paradise\ -\ Demo.ttf') format('truetype'); 
+ }
+
+ @font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('../fonts/GTWalsheimPro-Regular.woff2') format('woff2'),
+       url('../fonts/GTWalsheimPro-Regular.woff') format('woff');
+}
