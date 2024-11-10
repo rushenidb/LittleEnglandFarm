@@ -264,7 +264,7 @@ export default function Home() {
           Yet, despite the unpredictable weather, the harsh realities of farming, endless paperwork, a stubborn local council, and the world’s apparent lack of appreciation for his brilliance, David isn’t giving up. Not while his farm shop is still selling candles that smell like a sweaty barn, at least.<br />
           </p>
           <p className="section-subtitle2">
-          Sure, managing Diddly Farms could drive anyone to drown their sorrows in a pint of (Hawkstone) beer, but with girlfriend Emma, farm manager Tom, jolly Sam, and Gary the head of security by his side, David knows he’s not alone in this. And honestly, it’s hard to stay down when there’s a JCB telehandler, a crop-spraying hovercraft, and a digger just waiting in the barn.<br />
+          Sure, managing LittleEngland Farms could drive anyone to drown their sorrows in a pint of (Hawkstone) beer, but with girlfriend Emma, farm manager Tom, jolly Sam, and Gary the head of security by his side, David knows he’s not alone in this. And honestly, it’s hard to stay down when there’s a JCB telehandler, a crop-spraying hovercraft, and a digger just waiting in the barn.<br />
           </p>
           <p className="section-subtitle2">
           Because as a wise man once said, “No one can resist a digger...”<br />

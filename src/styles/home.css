@@ -29,16 +29,17 @@
 .slide-text {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50px;
   transform: translateY(-50%);
   color: #ffffff;
   padding-left: 20px;
   border-radius: 8px;
+  text-align: center;
 
 }
 
 .slide-text.painted-paradise p.paradise-p {
-  font-family: 'Painted Paradise';
+  font-family: 'Digdope-Regular';
   font-size: 50px;
   margin: 0; 
   padding-bottom: 5px;
