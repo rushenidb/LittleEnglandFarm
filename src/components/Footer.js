@@ -29,7 +29,7 @@ const Footer = () => {
               <li><a href="#">All</a></li>
               <li><a href="#">Clothing</a></li>
               <li><a href="#">Kitchen</a></li>
-              <li><a href="#">Diddly Drinks</a></li>
+              <li><a href="#">LittleEngland Drinks</a></li>
               <li><a href="#">Bundles</a></li>
               <li><a href="#">Gifts</a></li>
             </ul>
@@ -55,7 +55,7 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div className="newsletter-section">
           <h4>GET AHEAD OF THE HERD!</h4>
-          <p>Sign up to our newsletter to ensure that you are the first to hear about everything farm related, special offers, and the inside scoop on all Jeremy's mishaps.</p>
+          <p>Sign up to our newsletter to ensure that you are the first to hear about everything farm related, special offers, and the inside scoop on all Brook's mishaps.</p>
           <form>
             <label>Email address*</label>
             <input type="email" required />
@@ -69,22 +69,7 @@ const Footer = () => {
         <p>© 2024 Little England Farm Shop - Designed & developed by twentynine_</p>
         
       </div>
-      <div className="slider-container">
-  <div className="grain-container">
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={grain} alt="grain icon" className="footer-icon grain" />
-    <img src={tractorIcon} alt="tractor icon" className="footer-icon tractor" />
-  </div>
-</div>
+
     </footer>
   );
 };

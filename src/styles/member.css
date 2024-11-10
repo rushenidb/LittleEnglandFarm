@@ -1,0 +1,176 @@
+/*image after faq*/
+.stockist-section {
+    object-fit: cover;
+    position: relative;
+    text-align: center;
+    background-color: #F4F1E7;
+    height:1200px;
+    overflow-x: hidden;
+  }
+  
+  .background-image {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    opacity: 0; /* Start with opacity 0 for fade-in */
+    transform: scale(1); /* Initial scale for the zoom effect */
+    animation: fadeInZoom 8s ease-in-out forwards, slowZoom 30s linear infinite; /* Apply two animations */
+  }
+  
+  /* Fade in and zoom animation */
+  @keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.05); /* Slight zoom */
+    }
+  }
+  
+  /* Slow continuous zoom (optional) */
+  @keyframes slowZoom {
+    0% {
+      transform: scale(1.05);
+    }
+    50% {
+      transform: scale(1.08); /* Increase scale slightly */
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  
+  .stockist-content {
+    position: absolute;
+    top: 65%; /* Starts from the middle of the background */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content horizontally */
+    background-color: #005f57; /* Match the background color */
+    color: #fff;
+    padding: 20px 100px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 660px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stockist-title {
+    margin-bottom: 10px;
+    font-family: 'Painted Paradise';
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+    color: #fae37a;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 100;
+  }
+  
+  .stockist-title span {
+    font-family: Digdope-Regular; /* Replace with the actual font name if available */
+    /* font-size: 2em; */
+    color: #F4F1E7;
+    font-size: 80px;
+  }
+  
+  .stockist-subtitle {
+    font-family: 'GT Walsheim Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color:#d6d6d6;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px); /* Adjust height of bounce */
+    }
+    60% {
+      transform: translateY(-5px); /* Adjust secondary bounce height */
+    }
+  }
+  
+  .contact-button {
+    display: inline-block;
+    padding: 10px 30px 10px 22px;
+    background-color: #f1dd6c;
+    color: #08645e;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Digdope-Regular';
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-color: #f1dd6c;
+    animation: bounce 2s infinite; /* Apply bounce animation */
+  }
+  
+  .contact-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -19px;
+    width: 20px;
+    height: 100%;
+    background-color: #f1dd6c;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+  
+  
+  .goat-icon-left,
+  .goat-icon-right {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+  }
+  
+  .goat-icon-left {
+    left: 50px;
+    width:100px;
+  }
+  
+  .goat-icon-right {
+    right: 50px;
+    width: 100px;
+    top:250px;
+  }
+  
+  
+  .follow-us{
+    padding-top:250px;
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  .follow-text{
+    /* margin-bottom: 10px; */
+    font-family: 'Painted Paradise';
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+    color: #a7170d;
+    text-align: left;
+    /* padding-top: 20px; */
+    padding-left: 20px;
+    padding-top:50px;
+    padding-bottom:50px;
+    font-weight: 100;
+  }
+  
+  .follow-text span{
+    font-family: 'Digdope-Regular';
+    color:#555454;
+    font-size: 38px;
+  }
+  

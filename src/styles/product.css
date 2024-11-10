@@ -1,0 +1,160 @@
+/* Product of the month section */
+.fixed-image {
+    position: fixed; /* Fixes the position in the viewport */
+    top: 20px; /* Adjust this value to position it vertically */
+    right: 20px; /* Adjust this value to position it horizontally */
+    z-index: 100; /* Ensure it is above other content */
+  }
+  
+  /* Product of the month section */
+  .product-of-the-month {
+    position: relative; /* Ensures positioning relative to this container */
+    background-color: #F4F1E7;
+    padding: 40px 20px 20px 100px;
+    height: 1200px; /* Adjust based on your content */
+    overflow: hidden; /* Ensures elements do not overflow the section */
+  }
+  
+  
+  .product-of-the-month::before { /* New rule for the rotated element */
+    content: '';
+    position: absolute;
+    top: 1240px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 100 20" transform="rotate(0)"><path fill="%2308645e" d="M0 20 L7 8 L14 20 L21 8 L28 20 L35 8 L42 20 L49 8 L56 20 L63 8 L70 20 L77 8 L84 20 L91 8 L98 20 V20 H0 Z"/></svg>');
+    z-index: 0;
+  }
+  
+  /* Flex container for text and image */
+  .content-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+  }
+  
+  /* Sticky image styling */
+  .imageright {
+    flex-shrink: 0; /* Prevents image from shrinking */
+    position: sticky; /* Keeps the image in place as you scroll */
+    top: 20px; /* Distance from the top of the viewport */
+    z-index: 2;
+    margin-left: 2px; /* Adds space between text and image */
+    margin-top: 100px; /* Adjust based on design */
+  }
+  
+  
+  
+  
+  /* Image styling */
+  .book {
+    max-width: 500px; /* Controls image size */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product {
+    font-family: 'Painted Paradise';
+    font-size: 40px;
+    margin: 0;
+    text-align: left;
+    color: #a7170d;
+  }
+  
+  .section-title2 {
+    font-family: 'Digdope-Regular';
+    font-size: 70px;
+    color: #5e5a60;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 50px; /* Adjust to set desired distance from the top */
+  }
+  
+  .product-link {
+    color: #5e5a60;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Digdope-Regular';
+    font-size: 30px;
+  }
+  
+  .section-subtitle {
+    margin-right: 180px;
+    font-family: 'GT Walsheim Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #525252;
+    max-width: 500px;
+    top: 60px;
+    font-weight: bold;
+  }
+  
+  .section-subtitle2 {
+    margin-right: 180px;
+    font-family: 'GT Walsheim Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #525252;
+    max-width: 500px;
+    top: 60px;
+  }
+  
+  .section-subtitle4 {
+    margin-right: 180px;
+    font-family: 'GT Walsheim Pro', sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #525252;
+    max-width: 500px;
+    top: 60px;
+    font-weight: bold;
+  }
+  
+  .qty {
+    display: inline-block;
+    padding: 10px 40px 10px 20px;
+    background-color: none;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Digdope-Regular';
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    border-color: #444444;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-style: ridge;
+    border-width: 2px;
+  }
+  
+  .shop-all {
+    display: inline-block;
+    padding: 10px 40px 10px 30px;
+    margin-left: 8px;
+    background-color: #f1dd6c;
+    color: #0a302d;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Digdope-Regular';
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-color: #444444;
+  }

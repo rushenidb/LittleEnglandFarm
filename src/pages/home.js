@@ -15,6 +15,12 @@ import tree from '../images/tree.png';
 import chicken from '../images/chicken.png';
 import owl from '../images/owl.png';
 import '../styles/home.css'; 
+import '../styles/bestseller.css'; 
+import '../styles/range.css'; 
+import '../styles/moreThanAFarm.css'; 
+import '../styles/product.css'; 
+import '../styles/faq.css'; 
+import '../styles/member.css'; 
 import PageTurn from '../pages/PageTurn';
 
 export default function Home() {
@@ -157,7 +163,6 @@ export default function Home() {
           <div className="slide-text painted-paradise">
             <p className="paradise-p">Welcome to Little England Farm</p>
             <h1 className="paradise-h1">Where Every Day Feels Like Home</h1>
-            {/* <h6 className="paradise-h6">Where Every Day Feels Like Home</h6> */}
           </div>
         </div>
         <div className="slide">
@@ -230,17 +235,11 @@ export default function Home() {
     <p className="more-than-text-left">
       WHAT SHOULD WE EXPECT WHEN VISITING Little england FARM SHOP? 
     </p>
-    <p className="left-text">Though small, 
-      our farm shop is full of local edible delights and gifts. Our Big View Café 
-      is also based on site, selling Jeremy's own Hawkstone beer and literally the 
-      best hamburgers... in the world. Table seating is available within our lambing 
-      barn and outside at THE BIG VIEW. Please note, the shop queue and food queue 
-      may be shut off early depending on how busy the site is.</p>
+    <p className="left-text">When visiting Little England Farm Shop, you’ll find a cozy space brimming with local treats and unique gifts. Our on-site Big View Café serves Jeremy’s own Hawkstone beer alongside what many say are some of the best hamburgers around. You can enjoy seating in our lambing barn or outside at the scenic Big View. Please note, the shop and food queues may close early if it gets particularly busy.</p>
     <p className="more-than-text-right">
       WHO WE ARE
     </p>
-    <p className="right-text">Opened in 2020 by Jeremy Clarkson and Lisa Hogan, Little england 
-    Farm hosts a small barn full of local goods.</p>
+    <p className="right-text">Founded in 2020 by Alex Turner and Emma Brooks, Little England Farm features a cozy barn stocked with a variety of local goods.</p>
   </div>
   <div className="birds-on-wire">
           <img src={birds} alt="birds on wire" className='birds'/>
@@ -251,29 +250,29 @@ export default function Home() {
 <section className="product-of-the-month" ref={productSectionRef}>
       <div className="content-container">
         <div className="text-content">
-          <p className="product">The Clarkson</p>
+          <p className="product">The Brooks</p>
           <h2 className="section-title2">PRODUCT OF THE <br />MONTH</h2>
-          <a href="#" className="product-link">Home to Roost Hardback Book</a>
+          <a href="#" className="product-link">Home to Red riding hood Book</a>
           <p className="section-subtitle">
             It's been another memorable year on Little England Farm <br />- will the chickens finally come home to roost?<br />
           </p>
-          <p className="section-subtitle2">So, that went well ...<br /></p>
+          <p className="section-subtitle2">It all started with high hopes...<br /></p>
           <p className="section-subtitle2">
-            The spring barley crop failed. Just like the oil seed rape. And the durum wheat. Then the oats turned the colour of a hearing aid and the mushrooms went mouldy. Farming sheep, pigs and cows was hardly more lucrative. Jeremy would be better off trying to breed ostriches.<br />
+          The spring barley crop didn’t make it. Neither did the oilseed rape or the durum wheat. The oats turned an odd shade of beige, and the mushrooms grew mould. Raising sheep, pigs, and cows didn’t bring in much either. Perhaps David should have tried his hand at breeding llamas instead.<br />
           </p>
           <p className="section-subtitle2">
-            But in the face of uncooperative weather, the relentless realities of the agricultural economy, bureaucracy, a truculent local planning department and the world’s persistent refusal to recognise his ingenuity and genius, our hero’s not beaten yet. Not while the farm shop’s still doing a roaring trade in candles that smell like his knacker hammock, he isn’t.<br />
+          Yet, despite the unpredictable weather, the harsh realities of farming, endless paperwork, a stubborn local council, and the world’s apparent lack of appreciation for his brilliance, David isn’t giving up. Not while his farm shop is still selling candles that smell like a sweaty barn, at least.<br />
           </p>
           <p className="section-subtitle2">
-            On the face of it, the challenges of making a success of Diddly Squat are enough to have you weeping into your (Hawkstone) beer, but misery loves company and in girlfriend Lisa, Farm Manager Kaleb, Cheerful Charlie and Gerald his Head of Security Jeremy knows he’s got the best. And it’s hard for a chap to feel too gloomy about things when there’s a JCB telehandler, a crop-spraying hovercraft and a digger in the barn.<br />
+          Sure, managing Diddly Farms could drive anyone to drown their sorrows in a pint of (Hawkstone) beer, but with girlfriend Emma, farm manager Tom, jolly Sam, and Gary the head of security by his side, David knows he’s not alone in this. And honestly, it’s hard to stay down when there’s a JCB telehandler, a crop-spraying hovercraft, and a digger just waiting in the barn.<br />
           </p>
           <p className="section-subtitle2">
-            Because as a wise man* once said, ‘there’s no man alive who wouldn’t have fun with a digger ...’<br />
+          Because as a wise man once said, “No one can resist a digger...”<br />
           </p>
           <p className="section-subtitle2">
-            *Jeremy<br />
+            *David<br />
           </p>
-          <p className="section-subtitle4">LKR 7,800.00</p>
+          <p className="section-subtitle4">LKR 8,800.00</p>
           <a href="#" className="qty">-  1  +</a>
           <a href="#" className="shop-all">Add to Cart</a>
         </div>
@@ -317,10 +316,7 @@ export default function Home() {
       </section>
 
 
-      <section className="image-after-faq">
-      {/* <div className="farm">
-      <img src={farm} alt="farm Animals" className="farm-animals"/>
-    </div> */}
+    <section className="image-after-faq">
     <div className="stockist-section">
       <div className="stockist-background">
         {/* Add your background image here */}
@@ -341,7 +337,6 @@ export default function Home() {
       {/* Follow Us Section */}
       <div className="follow-us">
         <p className="follow-text">Follow our tracks at <br/><span>@LittleEngland.FARMSHOP</span> </p>
-        {/* <p className="instagram-handle">@LittleEngland.FARMSHOP</p> */}
       </div>
     </div>
       </section>

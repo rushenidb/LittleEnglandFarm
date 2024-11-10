@@ -1,0 +1,109 @@
+/* Styles for the More Than Just a Farm Shop section */
+.more-than-section {
+    position: relative; /* Ensures positioning relative to this container */
+    background-color: #F4F1E7;
+    padding: 40px 20px 20px 100px;
+    overflow: hidden; /* Ensures elements do not overflow the section */
+    height:700px;
+  }
+  
+  .more-than-section::before { /* New rule for the rotated element */
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 100 20" transform="rotate(180)"><path fill="%2308645e" d="M0 20 L7 8 L14 20 L21 8 L28 20 L35 8 L42 20 L49 8 L56 20 L63 8 L70 20 L77 8 L84 20 L91 8 L98 20 V20 H0 Z"/></svg>');
+    z-index: 0;
+  }
+  
+  /* Position the title in front of the content */
+  .more-than-title {
+    font-family: 'Digdope-Regular';
+    font-size: 150px;
+    color: #5e5a60;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute; /* Position the title absolutely within the section */
+    top: 50px; /* Adjust to set desired distance from the top */
+    left: 540px; /* Adjust for horizontal placement */
+    z-index: 2; /* Higher z-index to appear above .more-than-content */
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 8px;
+    text-decoration-color: #f76800;
+  }
+  
+  /* Styles for the content container */
+  .more-than-content {
+    z-index: 1; /* Lower z-index so it appears behind .more-than-title */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px; /* Adjust to create space below the title */
+  }
+  
+  /* Styles for left and right heading text */
+  .more-than-text-left {
+    color: #5e5a60;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: left;
+    font-family: 'Digdope-Regular';
+    font-size: 30px;
+    max-width: 380px;
+  }
+  
+  .more-than-text-right {
+    color: #5e5a60;
+    margin-right: 382px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Digdope-Regular';
+    font-size: 30px;
+    position:absolute; /* Position at the top right */
+    top: 0;
+    right: 10px; /* Adjust for horizontal alignment */
+  }
+  
+  /* Styles for the descriptive text */
+  .left-text {
+    margin-right: 180px;
+    font-family: 'GT Walsheim Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #9b9b9b;
+    max-width: 300px;
+    top: 60px;
+  }
+  
+  /* Position right-text below the right heading */
+  .right-text {
+    max-width: 420px;
+    color: #9b9b9b;
+    font-size: 18px;
+    font-family: 'GT Walsheim Pro', sans-serif;
+    margin-right: 80px;
+    text-align: left;
+    position: absolute;
+    top: 60px; /* Adjust to control vertical spacing from .more-than-text-right */
+    right: 10px;
+  }
+  
+  .birds{
+    width:400px;
+    height:50px;
+    padding-left: 440px;
+    padding-top:100px;
+  }
